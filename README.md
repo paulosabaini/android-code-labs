@@ -1,2 +1,3 @@
-# code-labs
-Programming studies
+# Code Labs
+
+Programming studies and experimentation
