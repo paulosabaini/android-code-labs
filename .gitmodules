@@ -1,0 +1,3 @@
+[submodule "android-datastore"]
+	path = android-datastore
+	url = https://github.com/googlecodelabs/android-datastore
