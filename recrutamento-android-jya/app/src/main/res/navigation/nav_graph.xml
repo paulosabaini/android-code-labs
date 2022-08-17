@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/issuesFragment">
+
+    <fragment
+        android:id="@+id/issuesFragment"
+        android:name="org.sabaini.kotlingithubissues.ui.IssuesFragment"
+        android:label="fragment_issues"
+        tools:layout="@layout/fragment_issues">
+        <action
+            android:id="@+id/action_issuesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="org.sabaini.kotlingithubissues.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="selectedIssue"
+            app:argType="org.sabaini.kotlingithubissues.api.IssueResponse" />
+    </fragment>
+</navigation>
